@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #66b3ff, #0066cc);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+#splash {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.splash-img {
+  max-width: 80%;
+  height: auto;
+}
+.fade-text { animation: fadein 2s ease forwards; opacity: 0; }
+.hidden { display: none; }
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+#devotion-container { padding: 20px; margin-top: 20px; color: #f1fbff; }
+.ad-container { position: fixed; bottom: 0; width: 100%; background: rgba(255,255,255,0.08); padding: 6px 0; }
+footer { position: fixed; right: 12px; bottom: 48px; font-size: 12px; opacity: 0.9; }
